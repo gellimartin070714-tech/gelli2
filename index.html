@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angeli Beguña | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 1rem auto;
+      padding: 1.5rem;
+      max-width: 600px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card-content {
+      display: none;
+      margin-top: 1rem;
+      color: #555;
+    }
+    .card.open .card-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Angeli Beguña</h1>
+
+  <div class="card" onclick="toggleCard(this)">
+    <h3>Admin Support Projects</h3>
+    <div class="card-content">
+      <p>Invoice workflows, dispute resolution logs, and telecom system navigation samples.</p>
+    </div>
+  </div>
+
+  <div class="card" onclick="toggleCard(this)">
+    <h3>Data Analysis Projects</h3>
+    <div class="card-content">
+      <p>Visualizations, insights from datasets, and quality assurance reports.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleCard(card) {
+      card.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
